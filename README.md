@@ -1,6 +1,6 @@
 Google Sheets based solutions driven by custom app script to automate both the data collection of Sprint status at the finest grain, and also relevant views for scrum-masters, scrum-of-scrums and engineers.
 To use this tool, the code for the same is present at (https://github.com/ravishank8/Tracking-Sheet-for-JIRA). This location contains the GS code to be imported into any google sheet.
-Also a sample google sheet URL attached mentioned in README.md: (https://docs.google.com/spreadsheets/d/1G7byXBpfWecynMJ8DMDE7ZTSi9QugiSo9ve1egaVttA/edit?usp=sharing)
+Also a sample google sheet URL attached is at: (https://docs.google.com/spreadsheets/d/1G7byXBpfWecynMJ8DMDE7ZTSi9QugiSo9ve1egaVttA/edit?usp=sharing)
 The steps are as follows – 
 1. The first step is to import the chrome add-on “JIRA cloud for sheets” to essentially pull data from JIRA. It supports the following:
 * Any JQL needed to pull data from JIRA.
