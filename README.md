@@ -51,3 +51,17 @@ Now that we have the data, there are 3 views that are the most important. You wi
   * * 	What is the actual delay? (this will be at story level)
 Tracking sheet is a PIVOT created from the StoriesChart sheet, answering these exact queries.
 
+![](images/TrackingView.png)
+
+  * Completion View – One huge issue during Sprint is that the burn rate is good, but stories do not complete, and most of them get into the build in the second week of a two week Sprint, leading to compromised DOD and delayed closures. Completion view essentially answers the following – 
+  * * How are we doing on completing of stories? Whilst effort burn-down presents one picture, how are we doing on stories completion  themselves? Essentially are we closing stories at the expected pace?
+       Again, this is a PIVOT derived from the StoriesChart Data.
+
+![](images/CompletionView.png)
+
+  * The third and final view is the consolidated POD Status view, something that is more of a top down throughput view needed by both the engineers and scrums of scrums. This after a few sprints get combined with a quality view to present the quality + throughput picture. The throughput view is as such – 
+  
+![](/images/PODStatusView.png)
+
+These three views – Tracking Report, Completion Report and POD Status are used to drive the daily scrum of scrums. In a later section, we will show how we added a quality view to it to present a consolidated velocity + quality view.
+This automation was a primary contributor to us being able to manage with 2 scrum masters across 6 PODs.
