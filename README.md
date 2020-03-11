@@ -35,11 +35,19 @@ var incompleteStatusString = "IN DEV,Blocked";
 var devNotStartedString = "To Do, In PO Review, READY FOR DEV, Ready for Grooming, IN ANALYSIS, In Grooming, READY FOR PLANNING, IN REFINEMENT";
 
 *	Delay at each story level – This takes into account each story status – 
- * *	Complete (Delay - Completed): Stories can be delayed even if they have already completed.
- * *	Not started (Delay in Start - Not yet started): Stories can we delayed even if they have not yet started, based on the effort and planned end date.
- * *	In progress stories (Delay In Progress - Due date based): The delay of in progress stories is a combination of delay in start and delay in progress.
+  * * Complete (Delay - Completed): Stories can be delayed even if they have already completed.
+  * * Not started (Delay in Start - Not yet started): Stories can we delayed even if they have not yet started, based on the effort and planned end date.
+  * * In progress stories (Delay In Progress - Due date based): The delay of in progress stories is a combination of delay in start and delay in progress.
 Non-working days (including weekends) is taken into account while calculating the delay.
 
- * *	Remaining Effort: This might seem a very obvious thing, but becomes crucial in second week of the Sprint. If all developers are not fully loaded, this data helps give ability to complete the story even though there might have been delays.
+  * * Remaining Effort: This might seem a very obvious thing, but becomes crucial in second week of the Sprint. If all developers are not fully loaded, this data helps give ability to complete the story even though there might have been delays.
 At this point we have data for each story’s status across all PODs and developers. And this is what forms the data store for reporting and reports.
 Now that we have the data, there are 3 views that are the most important. You will see those in the generic sheet too. Once StoriesChart has data, these views will come to life.
+
+8.	The 3 views present 3 different unique pictures – 
+ *	Tracking view is to answer the following questions. These are typically the first questions to be asked per POD, and in the order too proceeding to the next subject to clear data on each question:
+  * *  Are you on track? If not, how much are you delayed by?
+  * * 	What stories are contributing to the delay? Which developers are delayed?
+  * * 	What is the actual delay? (this will be at story level)
+Tracking sheet is a PIVOT created from the StoriesChart sheet, answering these exact queries.
+
