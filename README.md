@@ -46,8 +46,8 @@ Now that we have the data, there are 3 views that are the most important. You wi
 
 8.	The 3 views present 3 different unique pictures – 
  *	Tracking view is to answer the following questions. These are typically the first questions to be asked per POD, and in the order too proceeding to the next subject to clear data on each question:
- * * i.	Are you on track? If not, how much are you delayed by?
- * * 	What stories are contributing to the delay? Which developers are delayed?
- * * 	What is the actual delay? (this will be at story level)
+  * *  Are you on track? If not, how much are you delayed by?
+  * * 	What stories are contributing to the delay? Which developers are delayed?
+  * * 	What is the actual delay? (this will be at story level)
 Tracking sheet is a PIVOT created from the StoriesChart sheet, answering these exact queries.
 
