@@ -1,8 +1,8 @@
-Google Sheets based solutions driven by custom app script to automate both the data collection of Sprint status at the finest grain, and also relevant views for scrum-masters, scrum-of-scrums and engineers.
+Google Sheets - scripts based solutions driven by custom app script to automate both the data collection of Sprint status at the finest grain, and also relevant views for scrum-masters, scrum-of-scrums and engineers.
 To use this tool, the code for the same is present at (https://github.com/ravishank8/Tracking-Sheet-for-JIRA). This location contains the GS code to be imported into any google sheet.
 Also a sample google sheet URL attached is at: (https://docs.google.com/spreadsheets/d/1G7byXBpfWecynMJ8DMDE7ZTSi9QugiSo9ve1egaVttA/edit?usp=sharing)
 The steps are as follows – 
-1. The first step is to import the chrome add-on “JIRA cloud for sheets” to essentially pull data from JIRA. It supports the following:
+1. The first step is to import the chrome add-on **“JIRA cloud for sheets”** to essentially pull data from JIRA. It supports the following:
 * Any JQL needed to pull data from JIRA.
 * Ability to select fields to be imported (The default is the columns selected by the user In JIRA)
 * Ability to schedule the import – for e.g. once every day, once every hour
@@ -45,7 +45,7 @@ At this point we have data for each story’s status across all PODs and develop
 Now that we have the data, there are 3 views that are the most important. You will see those in the generic sheet too. Once StoriesChart has data, these views will come to life.
 
 8.	The 3 views present 3 different unique pictures – 
- *	Tracking view is to answer the following questions. These are typically the first questions to be asked per POD, and in the order too proceeding to the next subject to clear data on each question:
+ *	**Tracking view** is to answer the following questions. These are typically the first questions to be asked per POD, and in the order too proceeding to the next subject to clear data on each question:
   * *  Are you on track? If not, how much are you delayed by?
   * * 	What stories are contributing to the delay? Which developers are delayed?
   * * 	What is the actual delay? (this will be at story level)
@@ -53,15 +53,15 @@ Tracking sheet is a PIVOT created from the StoriesChart sheet, answering these e
 
 ![](images/TrackingView.png)
 
-  * Completion View – One huge issue during Sprint is that the burn rate is good, but stories do not complete, and most of them get into the build in the second week of a two week Sprint, leading to compromised DOD and delayed closures. Completion view essentially answers the following – 
+  * **Completion View** – One huge issue during Sprint is that the burn rate is good, but stories do not complete, and most of them get into the build in the second week of a two week Sprint, leading to compromised DOD and delayed closures. Completion view essentially answers the following – 
   * * How are we doing on completing of stories? Whilst effort burn-down presents one picture, how are we doing on stories completion  themselves? Essentially are we closing stories at the expected pace?
        Again, this is a PIVOT derived from the StoriesChart Data.
 
 ![](images/CompletionView.png)
 
-  * The third and final view is the consolidated POD Status view, something that is more of a top down throughput view needed by both the engineers and scrums of scrums. This after a few sprints get combined with a quality view to present the quality + throughput picture. The throughput view is as such – 
+  * The third and final view is the consolidated **POD Status view**, something that is more of a top down throughput view needed by both the engineers and scrums of scrums. This after a few sprints get combined with a quality view to present the quality + throughput picture. The throughput view is as such – 
   
 ![](/images/PODStatusView.png)
 
-These three views – Tracking Report, Completion Report and POD Status are used to drive the daily scrum of scrums. In a later section, we will show how we added a quality view to it to present a consolidated velocity + quality view.
-This automation was a primary contributor to us being able to manage with 2 scrum masters across 6 PODs.
+**These three views – Tracking Report, Completion Report and POD Status are used to drive the daily scrum of scrums.** In a later section, we will show how we added a quality view to it to present a consolidated velocity + quality view.
+**This automation was a primary contributor to us being able to manage with 2 scrum masters across 6 PODs.**
